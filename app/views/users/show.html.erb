@@ -2,3 +2,18 @@
   <%= gravatar_for @user %>
   <%= @user.name %>
 </h1>
+
+
+<hr />
+<p>ユーザー情報を編集&ensp;<%= link_to "edit",  edit_user_path(@user) %></p>
+
+<h2>ユーザー情報</h2>
+<p class="center">
+ 基本情報： <%= @user.profile  %><br />
+ アドレス：<%= @user.address  %><br />
+ 地域：<%= @user.area  %><br />
+</p>
+
+
+
+<p>users内のshow</p>
